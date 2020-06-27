@@ -80,6 +80,9 @@ class DoublyLinkedList {
       this.removeHead();
     } else if (nodeToRemove === this.tail) {
       this.removeTail();
+    } else {
+      const nextNode = nodeToRemove.getNextNode();
+      const previousNode = nodeToRemove.getPreviousNode();
     }
   }
 
