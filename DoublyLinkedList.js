@@ -15,7 +15,7 @@ class DoublyLinkedList {
       newHead.setNextNode(currentHead);
     }
     this.head = newHead;
-    if (this.tail == null) {
+    if (!this.tail) {
       this.tail = newHead;
     }
   }
@@ -24,11 +24,11 @@ class DoublyLinkedList {
     const newTail = new Node(data);
     const currentTail = this.tail;
     if (currentTail) {
-      currentTail.setPreviousNode(newTail);
-      newTail.setNextNode(currentTail);
+      currentTail.setNextNode(newTail);
+      newTail.setPreviousNode(currentTail);
     }
     this.tail = newTail;
-    if (this.head == null) {
+    if (!this.head) {
       this.head = newTail;
     }
   }
