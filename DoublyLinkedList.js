@@ -67,7 +67,14 @@ class DoublyLinkedList {
     let nodeToRemove;
     let currentNode = this.head;
     while (currentNode) {
+      if (currentNode.data === data) {
+        nodeToRemove = currentNode;
+        break;
+      }
       currentNode = currentNode.getNextNode();
+    }
+    if (!nodeToRemove) {
+      return null;
     }
   }
 
