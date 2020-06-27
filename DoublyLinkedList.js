@@ -78,6 +78,8 @@ class DoublyLinkedList {
     }
     if (nodeToRemove === this.head) {
       this.removeHead();
+    } else if (nodeToRemove === this.tail) {
+      this.removeTail();
     }
   }
 
