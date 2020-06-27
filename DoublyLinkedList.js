@@ -76,9 +76,10 @@ class DoublyLinkedList {
     if (!nodeToRemove) {
       return null;
     }
+    if (nodeToRemove === this.head) {
+      this.removeHead();
+    }
   }
-
-
 
   printList() {
     let currentNode = this.head;
