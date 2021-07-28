@@ -1,4 +1,4 @@
-const DoublyLinkedList = require('./DoublyLinkedList.js');
+const DoublyLinkedList = require('./DoublyLinkedList');
 
 const subway = new DoublyLinkedList();
 
